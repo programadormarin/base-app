@@ -7,6 +7,7 @@ services:
       - "80:80"
     volumes:
       - ./code:/code
+      - ./site.conf:/etc/nginx/conf.d/nginx.conf
       - ./site.conf:/etc/nginx/conf.d/site.conf
     networks:
       - code-network
